@@ -1,0 +1,45 @@
+/* YouTube Player styling */
+.ytp-button-guitar {
+	background: no-repeat url('chrome-extension://__MSG_@@extension_id__/img/grey.png') !important;
+	float: right;
+	background-size: auto;
+	width: 30px;
+	height: 27px;
+}
+
+.ytp-button-guitar:hover {
+	background: no-repeat url('chrome-extension://__MSG_@@extension_id__/img/hover.png') !important;
+}
+
+.ytp-button-guitar-on {
+	background: no-repeat url('chrome-extension://__MSG_@@extension_id__/img/on.png') !important;
+}
+
+/* tab box styling */
+.lyricsBox {
+	overflow-y:	scroll;
+	height:		400px;
+/*	font-family: "Courier New", Monospace;*/
+	font-size: 0.85em;
+	color: rgb(51, 51, 51);
+}
+.tabBoxNo {
+	height:		20px;
+	font-size: 1em;
+	text-align: center;
+}
+.tabHeader {
+/*	overflow-y:	scroll;*/
+/*	height:		20px;*/
+/*	font-family: "Courier New", Monospace;*/
+	font-size: 1.25em;
+	text-align: center;
+}
+.tab_searchLink {
+	/*font-size: 1.5em;
+	text-align: center;*/
+}
+.tab_sourceLink {
+/*	font-size: 1em;
+	text-align: center;*/
+}
