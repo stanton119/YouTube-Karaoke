@@ -1,0 +1,26 @@
+YouTube Karaoke attempts to remove the vocals from the video.
+
+Simply click the Karaoke button that appears in the YouTube player, as illustrated with a microphone.
+
+* This requires the HTML5 YouTube Player. Protected flash videos, such as VEVO, will unfortunately not work.
+* This technique does not work with some songs.
+
+This plugin is best combined with a lyrics plugin.
+
+If you have any problems or question please use the "Send Feedback" link from the settings page.
+
+///////
+A simple Chrome extension that gives you the option to use the default HTML5 video player on YouTube.
+
+Remember to go to chrome://extensions and check out the options page after you install.
+
+If you have any problems or question please use the "Send Feedback" link in the "Details" tab.
+
+- NOTE
+
+* This does not replicate every YouTube feature. The default video player is bare bones and this is just an option for those who want it.
+
+* Due to recent changes to YouTube only MP4 360p, MP4 720p and WebM 360p videos are available when using this extension.
+
+* Some videos are protected and do not work with this extension (VEVO etc).
+

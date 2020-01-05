@@ -1,0 +1,117 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Vocal Filter
+\end_layout
+
+\begin_layout Standard
+Only access to biquads
+\end_layout
+
+\begin_layout Itemize
+We only want to combine channels on the vocal range
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Singing vocal range
+\end_layout
+
+\begin_layout Itemize
+150Hz to 3000Hz
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Use band pass filter to remove vocal range
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $H(z)=\frac{b_{0}+b_{1}z^{-1}+b_{2}z^{-2}}{a_{0}+a_{1}z^{-1}+a_{2}z^{-2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Create band stop to take remaining, invert band pass
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1-H(z)=1-\frac{b_{0}+b_{1}z^{-1}+b_{2}z^{-2}}{a_{0}+a_{1}z^{-1}+a_{2}z^{-2}}=\frac{a_{0}-b_{0}+\left(a_{1}-b_{1}\right)z^{-1}+\left(a_{2}-b_{2}\right)z^{-2}}{a_{0}+a_{1}z^{-1}+a_{2}z^{-2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Low pass/high pass combinations
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Filtering methods
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,54 @@
+{
+	"manifest_version": 2,
+
+    "name": "Karaoke Mode for YouTube™",
+    "description": "Remove the vocals from YouTube videos and display lyrics.",
+    "version": "2.1",
+	"author": "Richard Stanton",
+  
+	"minimum_chrome_version": "34",
+  
+
+	"background": {
+		"persistent": false,
+		"scripts": [ "js/background.js", "js/jquery-2.1.3.min.js" ]
+	},
+	
+	"web_accessible_resources": [
+		"js/youtubeAPI.js"
+	],
+	
+	"content_scripts": [
+		{
+			"matches": [
+				"http://www.youtube.com/*",
+				"https://www.youtube.com/*"
+			],
+			"css": ["js/insert.css"],
+			"js": ["js/jquery-2.1.3.min.js", "js/content.js"]
+		}
+	],
+	
+	"permissions": [
+		"http://*.youtube.com/",
+		"https://*.youtube.com/",
+		"http://*.google.com/*",
+		"https://*.google.com/*",
+		"http://*.googleapis.com/*",
+		"https://*.googleapis.com/*",
+		"http://*.wikia.com/*",
+		"https://*.wikia.com/*",
+		"tabs",
+		"storage"
+	],
+	
+	"page_action": {
+		"default_icon": "img/on.png",
+		"default_title": "Karaoke Mode for YouTube™"
+	},
+	
+	"icons": {
+		"128": "img/icon.png"
+	}
+
+}
